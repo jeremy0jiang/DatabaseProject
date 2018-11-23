@@ -7,23 +7,30 @@
   </style>
 
 
-<body>
-  <h1>Some famous Computer Scientists</h1>
-  <div>{{data}}</div>
+  <body>
+  
+    <h1>Passenger List</h1>
+    <div>{{userNames}}</div>
 
-  <div>
-    {% for n in data %}
-    <div>{{n}}</div>
-    {% endfor %}
-  </div>
+    <div>
+      {% for n in userNames %}
+      <div>{{n}}</div>
+      {% endfor %}
+    </div>
 
-<p><a href="/another">Go to the other page</a></p>
+    <p><a href="/another">Go to the other page</a></p>
 
-<form method="POST" action="/add">
-<p>Name of new computer scientist: <input type="text" name="name"> <input type="submit" value="Add"></p>
-</form>
+    <form method="POST" action="/ticket">
+      <p>Name: <input type="text" name="userName"> Year of Birth: <input type="number" name="year"> <input type="submit" value="Search"></p>
+    </form>
 
-</body>
+
+    <form method="POST" action="/add">
+      <p>Add computer scientist: <input type="text" name="name"> <input type="submit" value="Add"></p>
+    </form>
+    
+
+  </body>
 
 
 </html>

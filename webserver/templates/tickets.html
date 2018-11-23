@@ -1,0 +1,26 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+  <body>
+    
+    <h1>Ticket List</h1>
+    <div>{{error}}</div>
+    <div>{{tickets}}</div>
+
+    <div>
+      {% for n in tickets %}
+      <div>{{n}}</div>
+      {% endfor %}
+    </div>
+    
+
+  </body>
+
+
+</html>
