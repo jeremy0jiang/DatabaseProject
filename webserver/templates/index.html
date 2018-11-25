@@ -8,7 +8,7 @@
 
 
   <body>
-  
+    <h1>Welcome to Flight Checker Website!</h1>
     <h1>Passenger List</h1>
     <!-- <div>{{userNames}}</div> -->
 
@@ -108,7 +108,7 @@
     <form class="form-inline" method="POST" action="/showlikeairline">
       <div class="form-group">
         <div class="input-group">
-            <span class="input-group-addon">Please input the Username to see the liked airline: </span>
+            <span class="input-group-addon">Please input a passenger name to see the liked airline: </span>
                 <select name="username" class="selectpicker form-control">
                   {% for o in userNames %}
                   <option value="{{o}}">{{o}}</option>
