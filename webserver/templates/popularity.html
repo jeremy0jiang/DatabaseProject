@@ -1,0 +1,35 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+
+
+  <body>
+    
+    <h1>Popularity of Airlines</h1>
+    <div>{{error}}</div>
+
+    <table>
+      <tr>
+        <th>Airlines</th>
+        <th>Liked Times</th>
+      </tr>
+      {% for item in ranklist %}
+      <tr>
+          <td>{{item[0]}}</td>
+          <td>{{item[1]}}</td>
+        {% endfor %}
+      </tr>
+     </table>
+    
+
+  </body>
+
+
+</html>

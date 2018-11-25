@@ -12,35 +12,27 @@
 
   <body>
     
-    <h1>Ticket List</h1>
+    <h1>Flight information</h1>
     <div>{{error}}</div>
-    
+
     <table>
       <tr>
-        <th>Name</th>
-        <th>Birthday</th>
-        <th>Gender</th>
+        <th>Flight Number</th>
+        <th>Airline Name</th>
         <th>From City</th>
         <th>To City</th>
-        <th>Airline</th>
-        <th>Departure Time</th>
-        <th>Flight Duration</th>
+        <th>Jet Series</th>
       </tr>
-      {% for item in tickets %}
+      {% for item in flightlist %}
       <tr>
           <td>{{item[0]}}</td>
           <td>{{item[1]}}</td>
           <td>{{item[2]}}</td>
           <td>{{item[3]}}</td>
           <td>{{item[4]}}</td>
-          <td>{{item[5]}}</td>
-          <td>{{item[6]}}</td>
-          <td>{{item[7]}}</td>
         {% endfor %}
       </tr>
-     </table>
-      
-    
+    </table>
     
 
   </body>
